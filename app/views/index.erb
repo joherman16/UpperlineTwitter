@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Upperline Twitter</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+      <h1>Upperline Twitter</h1>
+    
+    <!--<b><p>User 1: <%= @user1.name %></p></b>-->
+    
+    
+    <ul name="feed">
+        <% @tweets.each do |tweet| %>
+            <li><h3><%= tweet.userID %></h3>: <%= tweet.text %></li>        
+        
+        <% end %>
+        
+        
+    </ul>
+    
+  </body>
+</html>
+
+    
